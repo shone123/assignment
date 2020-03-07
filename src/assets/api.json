@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Authentication",
+    "description": "Generate tokens based on the OAuth 2.0 standard to authenticate requests made to Forge APIs and SDKs.",
+    "links": {
+      "introUrl":"/developer/en/api/dummy1/intro",
+      "guideURL":"/developer/en/api/dummy1/guide",
+      "referenceURL": "/developer/en/api/dummy1/reference"
+    }
+  },
+  {
+    "title": "Data Management",
+    "description": "Access data across BIM 360 team, Fusion Team, BIM 360 Docs, and the Object Storage Service to build apps to display and extend your data in ways that add value to your users.",
+    "links": {
+      "introUrl":"/developer/en/api/dummy1/intro",
+      "guideURL":"/developer/en/api/dummy1/guide",
+      "referenceURL": "/developer/en/api/dummy1/reference"
+    }
+  },
+  {
+    "title": "Design Automation",
+    "description": "Automate repetitive tasks by leveraging on the scale of the Forge Platform and running scripts on your design files in the cloud.",
+    "links": {
+      "introUrl":"/developer/en/api/dummy1/intro",
+      "guideURL":"/developer/en/api/dummy1/guide",
+      "referenceURL": "/developer/en/api/dummy1/reference"
+    }
+  }
+]
