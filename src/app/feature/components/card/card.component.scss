@@ -1,0 +1,43 @@
+.course-card {
+    margin: 5px 5px 5px 5px;
+    min-height: 100%;
+}
+.course-actions {
+	padding: 28px 16px 0px !important;
+}
+.course-card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.title {
+	color: #3c3c3c;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 16px 16px 0;
+}
+
+.icon-image {
+	background-image: url('https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200109065713/images/api-icons/icon-oauth.svg');
+	border-radius: 0px !important;
+}
+.course-actions a {
+	
+	position: relative;
+    padding: .5em 0;
+    display: block;
+    color: #888;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.2;
+    border-bottom: 1px solid #f2f2f2;
+    text-decoration: none;
+}
+.course-actions a:last-child { border-bottom: none;  }
+
+svg.material-icons {
+ 	float:right;
+ 	font-color:#888 !important;
+}
+svg.material-icons:hover {
+ 	fill: red;	
+}
+
