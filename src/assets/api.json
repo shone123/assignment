@@ -25,5 +25,32 @@
       "guideURL":"/developer/en/api/dummy1/guide",
       "referenceURL": "/developer/en/api/dummy1/reference"
     }
+  },
+  {
+    "title": "Design Automation",
+    "description": "Automate repetitive tasks by leveraging on the scale of the Forge Platform and running scripts on your design files in the cloud.",
+    "links": {
+      "introUrl":"/developer/en/api/dummy1/intro",
+      "guideURL":"/developer/en/api/dummy1/guide",
+      "referenceURL": "/developer/en/api/dummy1/reference"
+    }
+  },
+  {
+    "title": "Design Automation",
+    "description": "Automate repetitive tasks by leveraging on the scale of the Forge Platform and running scripts on your design files in the cloud.",
+    "links": {
+      "introUrl":"/developer/en/api/dummy1/intro",
+      "guideURL":"/developer/en/api/dummy1/guide",
+      "referenceURL": "/developer/en/api/dummy1/reference"
+    }
+  },
+  {
+    "title": "Design Automation",
+    "description": "Automate repetitive tasks by leveraging on the scale of the Forge Platform and running scripts on your design files in the cloud.",
+    "links": {
+      "introUrl":"/developer/en/api/dummy1/intro",
+      "guideURL":"/developer/en/api/dummy1/guide",
+      "referenceURL": "/developer/en/api/dummy1/reference"
+    }
   }
 ]

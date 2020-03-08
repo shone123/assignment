@@ -1,0 +1,62 @@
+<div class="container heading">
+    <section>
+        <h2>APIs &amp; Services</h2>
+        <p>Access information on how to use Forge APIs and Services</p>
+    </section>
+</div>
+<div class="container">
+    
+    <div class="row">
+      <div *ngFor="let doc of apilist" class="col-lg-4 col-sm-4 mb-2" >
+
+        <mat-card class="api-card" style="z-index: -1;">
+            
+            <mat-card-header> 
+                    <div mat-card-avatar class="icon-image"></div>             	
+                    <mat-card-title class="title">{{doc.title}}</mat-card-title>
+            </mat-card-header>
+
+            <mat-card-content>
+              <p>
+                {{doc.description}}                  
+              </p>
+            </mat-card-content>
+
+              <mat-card-actions class="api-actions">
+                <ul> 
+                    <li>
+                        <a [routerLink]="['/intro']">
+                            Intro			            
+                            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill='#888'/></svg>
+                        </a>      
+                    </li>               	
+                    <li>
+                        <a [routerLink]="['/guide']">
+                            Guidence
+                            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill='#888'/></svg>
+                        </a>
+                    </li>                  
+                    <li>
+                        <a [routerLink]="['/reference']">
+                            Reference
+                            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill='#888'/></svg>
+                        </a>
+                    </li>
+                  
+                </ul>  
+              </mat-card-actions>      
+        </mat-card>
+
+      </div>
+    </div>
+</div>
+
+
+<!-- <div *ngFor="let doc of apilist">
+
+   <span>{{doc.title}}</span>
+   <span>{{doc.description}}</span>
+
+</div>
+-->
+

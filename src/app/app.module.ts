@@ -8,32 +8,31 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from  '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
-import { HeaderComponent } from './feature/components/header/header.component';
-import { FooterComponent } from './feature/components/footer/footer.component';
-import { CardComponent } from './feature/components/card/card.component';
+
 
 import { IntroComponent } from './documentation/intro/intro.component';
 import { GuideComponent } from './documentation/guide/guide.component';
 import { ReferenceComponent } from './documentation/reference/reference.component';
-import { HttpServiceService } from "./documentation/services/http-service.service";
+import { HttpServiceService } from "./services/http-service.service";
+import { SharedModule } from './shared/shared.module';
+import { DocumentationLandingComponent } from './layout/documentation-landing/documentation-landing.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,    
+    AppComponent,    
     IntroComponent,
     GuideComponent,
     ReferenceComponent,
-    CardComponent
+    DocumentationLandingComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule, 
     MatCardModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
       
   ],
   providers: [HttpServiceService],
