@@ -11,13 +11,15 @@ import { AppRoutingModule } from '../app-routing.module';
 import { MaterialModule } from '../material/material.module';
 
 import { NavComponent } from './components/nav/nav.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
     CardComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +32,8 @@ import { NavComponent } from './components/nav/nav.component';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    NavComponent
+    NavComponent,
+    LoaderComponent
   ]
 
 })

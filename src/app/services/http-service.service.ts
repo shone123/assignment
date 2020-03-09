@@ -7,14 +7,12 @@ import {Observable, throwError} from "rxjs";
   providedIn: 'root'
 })
 export class HttpServiceService {
-
-
+  dataurl = "assets/api.json";
   constructor(private http:HttpClient) {
 
     }
-
     getApiList(): Observable<any> {
-    	return this.http.get("assets/api.json");
+    	return this.http.get(this.dataurl);
   	};
 
 }

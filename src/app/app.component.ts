@@ -15,8 +15,7 @@ export class AppComponent implements OnInit {
   constructor(private httpClient: HttpClient){
 
   }
-
   ngOnInit(){
-          
+
   }
 }

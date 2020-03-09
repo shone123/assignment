@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Observable} from "rxjs";
 import { HttpServiceService } from "../../../services/http-service.service";
+import { ShareDataService } from "../../../services/share-data.service";
 
 
 @Component({
@@ -21,11 +22,15 @@ dataLength: number = 3;
 scroll_data_start: number = 0
 
 //apilist$: Observable<apilist>;
-  constructor(private apilistservice: HttpServiceService) { }
+  constructor(private apilistservice: HttpServiceService, private share_service: ShareDataService) { }
 
   ngOnInit(): void {
-
 	this.getAPIList(this.dataInitial);
+
+	setTimeout(() => {
+		this.showSpinner;
+		this.share_service.setData(this.showSpinner);
+	}, 1000)
   }
   
   getAPIList(limit) {
@@ -38,9 +43,9 @@ scroll_data_start: number = 0
 
 					this.apilist.push(response[i]);
 				}
-				setTimeout(()=>{
-				this.showSpinner = false;
-				},1000)
+				// setTimeout(()=>{
+				// this.showSpinner = false;
+				// },1000)
 				
 				this.apilist.forEach((items:any, index:any) =>{
 					this.introLink = items.links.introUrl;
@@ -58,7 +63,11 @@ scroll_data_start: number = 0
   }
   onScroll () {
 	  console.log("scrolled");
-	  this.showSpinner = true;
+	  setTimeout(() => {	
+		this.showSpinner;
+		this.share_service.setData(this.showSpinner);
+		
+	  }, 1000)
 	  this.scroll_data_start = this.dataInitial;
 	  this.dataLength = this.dataInitial =+ 4;
 	  this.getAPIList(this.scroll_data_start);	  
