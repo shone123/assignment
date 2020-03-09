@@ -1,15 +1,12 @@
 .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     height: 60px;
     display: flex;
     align-items: center;
     background-color: #00CCFF;
     color: white;
     font-weight: 600;
-    position: fixed;
+    //position: fixed;
   }
 
   .toolbar img {
@@ -22,4 +19,6 @@ header span {
 header span a {
   text-decoration:none;
   color:white;
+  cursor: pointer;
+  padding: 0px 0px 0px 50px;
 }

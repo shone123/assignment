@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavComponent } from '../../shared/components/nav/nav.component';
 
 @Component({
   selector: 'app-documentation-landing',

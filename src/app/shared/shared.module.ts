@@ -8,23 +8,29 @@ import { HttpServiceService } from "../services/http-service.service";
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { MatCardModule } from '@angular/material/card';
 import { AppRoutingModule } from '../app-routing.module';
+import { MaterialModule } from '../material/material.module';
+
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
     CardComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavComponent
   ],
   imports: [
     CommonModule,
     FlexLayoutModule,
     MatCardModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    NavComponent
   ]
 
 })

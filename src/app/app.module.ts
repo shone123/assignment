@@ -7,8 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from  '@angular/common/http';
-import {MatCardModule} from '@angular/material/card';
-
+import { MatCardModule } from '@angular/material/card';
+//import {MatProgressSpinnerModule} from '@angular/material'
+import { InfiniteScrollModule } from 'ngx-infinite-scroll'
 
 import { IntroComponent } from './documentation/intro/intro.component';
 import { GuideComponent } from './documentation/guide/guide.component';
@@ -25,6 +26,7 @@ import { DocumentationLandingComponent } from './layout/documentation-landing/do
     GuideComponent,
     ReferenceComponent,
     DocumentationLandingComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -32,11 +34,11 @@ import { DocumentationLandingComponent } from './layout/documentation-landing/do
     BrowserAnimationsModule, 
     MatCardModule,
     AppRoutingModule,
-    SharedModule
-      
+    SharedModule   
   ],
   providers: [HttpServiceService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: []
 })
 export class AppModule { }
 

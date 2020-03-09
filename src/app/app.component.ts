@@ -10,12 +10,13 @@ import { HttpClient } from "@angular/common/http";
 
 export class AppComponent implements OnInit {
   
+  showSpinner: boolean = true;
 
   constructor(private httpClient: HttpClient){
 
   }
 
   ngOnInit(){
-    
+          
   }
 }
