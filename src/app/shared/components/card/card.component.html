@@ -1,9 +1,11 @@
+<!-- <app-loader></app-loader> -->
+<img src="assets/loader.gif" *ngIf="showSpinner" style="margin-left: 40%; z-index: 1;">
 
 <div infiniteScroll 
     [infiniteScrollDistance]="0"
     [infiniteScrollThrottle]="50" 
     (scrolled)="onScroll()">
-
+    
     <div class="container">    
         <div class="row">
           <div *ngFor="let doc of apilist"  class="col-lg-4 col-md-6 col-sm-12 col-xs-12  mb-2" >

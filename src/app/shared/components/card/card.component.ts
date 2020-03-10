@@ -28,7 +28,7 @@ scroll_data_start: number = 0
 	this.getAPIList(this.dataInitial);
 
 	setTimeout(() => {
-		this.showSpinner;
+		this.showSpinner = false;
 		this.share_service.setData(this.showSpinner);
 	}, 1000)
   }
@@ -63,14 +63,15 @@ scroll_data_start: number = 0
   }
   onScroll () {
 	  console.log("scrolled");
-	  setTimeout(() => {	
-		this.showSpinner;
-		this.share_service.setData(this.showSpinner);
-		
-	  }, 1000)
+	  //this.showSpinner = true;
 	  this.scroll_data_start = this.dataInitial;
 	  this.dataLength = this.dataInitial =+ 4;
-	  this.getAPIList(this.scroll_data_start);	  
+	  this.getAPIList(this.scroll_data_start);
+	
+	  this.showSpinner = true;
+	  setTimeout(() => {	
+		this.share_service.setData(this.showSpinner = false);		
+	  }, 1000)	  
   }
 
 }
