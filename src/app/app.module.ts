@@ -17,6 +17,7 @@ import { DocumentationLandingComponent } from './layout/documentation-landing/do
 import { IntroComponent } from './api-list/components/intro/intro.component';
 import { GuideComponent } from './api-list/components/guide/guide.component';
 import { ReferenceComponent } from './api-list/components/reference/reference.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ReferenceComponent } from './api-list/components/reference/reference.co
       IntroComponent,
       GuideComponent,
       ReferenceComponent,
-      DocumentationLandingComponent    
+      DocumentationLandingComponent,
+      HomeComponent    
   ],
   imports: [
     BrowserModule,

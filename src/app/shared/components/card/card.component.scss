@@ -1,20 +1,23 @@
 .api-card {
     min-height: 100%;
+    &:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
 }
 .api-actions {
     padding: 24px 16px 0px !important;
-    cursor: pointer;
+    //cursor: pointer;
 }
-.api-actions ul li a:hover {
-    color:black;
-    
-}
-.api-actions ul li {
-    list-style-type: none;
-}
-.api-card:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
+// .api-actions ul li a:hover {
+//     color:black;
+// }    
+// }
+// .api-actions ul li {
+//     list-style-type: none;
+// }
+// .api-card:hover {
+//   box-shadow: 0 0 11px rgba(33,33,33,.2); 
+// }
 .title {
 	color: #3c3c3c;
     font-size: 1.2em;
@@ -26,29 +29,31 @@
 	background-image: url('https://developer.static.autodesk.com/forgeunified/releases/current/1.0.0.20200109065713/images/api-icons/icon-oauth.svg');
 	border-radius: 0px !important;
 }
-.api-actions a {
-	
+.api-actions ul li {
 	position: relative;
     padding: .5em 0;
     display: block;
-    color: #888;
-    font-size: 1.2em;
-    font-weight: 500;
-    line-height: 1.2;
     border-bottom: 1px solid #f2f2f2;
-    text-decoration: none;
-}
-.api-actions a:hover {
-    cursor: pointer;
-}
-.api-actions a:last-child { border-bottom: none;  }
+    list-style-type: none;
+    cursor: pointer;    
+    a {
+        color: #888;
+        font-size: 1.2em;
+        font-weight: 500;
+        line-height: 1.2;
+        text-decoration: none;
+        &:hover {
+            color:#333;
+        }             
+    }
 
-svg.material-icons {
- 	float:right;
 }
-svg.material-icons:hover {
- 	fill: red;	
-}
+// .api-actions a:hover {
+//     cursor: pointer;
+// }
+.api-actions a:last-child { 
+    border-bottom: none; 
+ }
 
 section >h2 {
     display: block;
@@ -66,5 +71,9 @@ section > p {
     margin-bottom: 1em;
 }
 
+.fa {
+    float: right;
+    font-size: 12px;
+}
 
 
